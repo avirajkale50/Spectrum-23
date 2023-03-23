@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Dasher</title>
+    <link rel="stylesheet" href="Brain Dasher.css">
+    <link rel="icon" href="image\SpectrumLogo1.png"/>
+    <!-- <script defer src="activePage.js"></script> -->
+</head>
+<body>
+  
+
+
+    <div class="container">
+
+      
+
+        <div class="card">
+
+          <div>
+        <img src="image/poster brain dasher.png"  alt="event1">
+      </div>
+
+
+
+       <div class="cardtext">
+        
+
+        <h2>Brain Dasher</h2>
+        <p>This is the game of each and every engineers who are very good in mathematical calculations.</p>
+      
+
+
+          <nav>
+            <ul>
+                <li><button class="tablink" onclick="openPage('Event', this, '	#383838')" >Event</button></li>
+                <li><button class="tablink" onclick="openPage('Rules', this, '	#383838')" >Rules</button></li>
+                <li><button class="tablink" onclick="openPage('Register', this, '	#383838')"  id="defaultOpen">Register</button></li>
+                <li><button class="tablink" onclick="openPage('Event Format', this, '	#383838')">Format</button></li>
+                <li><button class="tablink" onclick="openPage('FAQ`s', this, '	#383838')">FAQ`s</button></li>
+                
+            </ul>
+          </nav>
+
+          
+          
+
+
+
+
+          <div id="Event" class="tabcontent">
+            <h3>Event</h3>
+            <p>This is the in which you have to solve mathematical problems on the given time.<br>
+            Also this game involves the puzzel solving.<br>
+          In this game you your activeness of your mind will be check also how fast your mind work .<br>
+        How your mind understand the problem and how it will solve the mathamatical problemand puzzals. </p>
+          </div>
+          
+          <div id="Rules" class="tabcontent">
+            <h3>Rules</h3>
+            <p>(1)Maximum two studantper team.<br>
+               (2)There are Four Round in this event.<br>
+          (3)Limitedtime for each round.<br>
+        (4)Extra marks for remaining time.</p> 
+          </div>
+          
+          <div id="Register" class="tabcontent">
+            <h3>Register</h3>
+            <p>Brain Dasher is the event which will test our mathematical problem solving capacity and also the thinking our mind when we the new puzzels.<br>
+              So Enroll for such a wonderfull Event.
+            </p>
+            <button> <a href="#google form link is need to paste here "> Register  </a></button>
+            
+              </div>
+              
+          
+          <div id="Event Format" class="tabcontent">
+            <h3>Event Format</h3>
+            <p><b>Solving Mathamatical and Logical Puzzels</b>
+              <br><br>
+              <br><i>This is the in which you have to solve mathematical problems on the given time.<br>
+              Also this game involves the puzzel solving.<br>
+            In this game you your activeness of your mind will be check also how fast your mind work .<br>
+          How your mind understand the problem and how it will solve the mathamatical problemand puzzals.</i></p>
+          </div>
+
+         
+
+
+          <div id="FAQ`s" class="tabcontent">
+            <h3>FAQ's</h3>
+            <p><b>(1)What is mode the mode of event<br>
+            <b>
+              Ans.:This will have a offline mode.<br><br>
+            (2)Quetions are based on which knowledge?<br>
+          Ans.:Mathematical problem and puzzals will based on the basic knowledge which you gain up to this point.<br><br>
+        (3)What will be the enrollment prize?<br>
+      Ans.:The prize will be mention on rules page. </p>
+          </div>
+          
+
+
+
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+       <a href="Events.html">
+    <div id="icon" class="Icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </a>
+    </div>
+   
+
+
+
+
+
+    <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+        var icon = document.getElementById("icon");
+
+icon.onclick = function() {
+  if (this.className === "Icon") {
+    this.className = "Icon open"; 
+  } else {
+    this.className = "Icon";
+  }
+};
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+</body>
+</html>

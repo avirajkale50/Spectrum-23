@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Spot Model Making</title>
+    <link rel="stylesheet" href="onspotmodelmaking.css">
+    <link rel="icon" href="image\SpectrumLogo1.png"/>
+    <!-- <script defer src="activePage.js"></script> -->
+</head>
+<body>
+  
+
+
+    <div class="container">
+      <div class="card">
+      <div>
+      <img src="image/poster on spot madel making.png"  alt="event1">
+      </div>
+      <div class="cardtext">
+        
+
+        <h2>On Spot Model Making</h2>
+        <p>This is the game of each and every creative engineers who are very good in creating a new models.</p>
+      
+
+
+
+          <nav>
+            <ul>
+                <li><button class="tablink" onclick="openPage('Event', this, '#00BFFF')" >Event</button></li>
+                <li><button class="tablink" onclick="openPage('Rules', this, '#00BFFF')" >Rules</button></li>
+                <li><button class="tablink" onclick="openPage('Register', this, '#00BFFF')"  id="defaultOpen">Register</button></li>
+                <li><button class="tablink" onclick="openPage('Event Format', this, '#00BFFF')">Format</button></li>
+                <li><button class="tablink" onclick="openPage('FAQ`s', this, '#00BFFF')">FAQ`s</button></li>
+                
+            </ul>
+          </nav>
+
+          
+          
+
+
+
+
+          <div id="Event" class="tabcontent">
+            <h3>Event</h3>
+            <p>This is the in which you have to make the models like making the boad by using the isecream sticks.<br>
+            This event will increase your thinking power.<br>
+        This event will help you to give the real life application like doing the crative models when you have in problem like making the working model when you are in the company. </p>
+          </div>
+          
+          <div id="Rules" class="tabcontent">
+            <h3>Rules</h3>
+            <p>(1)Maximum Three studant per team.<br>
+               (2)Material provided to the studant:<br>
+                  (i)Ice-creame Sticks =60<br>
+                  (ii)Fevicol Bottal= 1<br>
+                  (iii)Plastic Paper = 1<br>
+               (3)Any other materials like Cutting tools,Cellotape (for plastic Paper only) decorative items are allowed.<br>
+               (4)Feviquics are not allowed.</p> 
+          </div>
+          
+          <div id="Register" class="tabcontent">
+            <h3>Register</h3><br>
+            <p><br>On the Spot model will make boost your thinking and imagination power .<br>
+                So get ready and register for comform your participant seat.
+            </p><br>
+            <button> <a href="#google form link is need to paste here "> Register  </a></button>
+            
+              
+
+
+
+
+
+
+          </div>
+          
+          <div id="Event Format" class="tabcontent">
+            <h3>Event Format</h3>
+            <p><b>To prepare the selling boat model using a icecream sticks</b>
+              <br><b>Boat size and Evaluation criteria will be given at the event time</b><br>
+              <br><i>This is the in which you have to make the models like making the boad by using the isecream sticks.<br>
+                This event will increase your thinking power.<br>
+                This event will help you to give the real life application like doing the crative models when you have in problem like making the working model when you are in the company.<br>
+          </i></p>
+          </div>
+
+
+         
+
+
+          <div id="FAQ`s" class="tabcontent">
+            <h3>FAQ's</h3>
+            <p><b>(1)What is mode the mode of event<br>
+            <b>
+              Ans.:This will have a offline mode.<br><br>
+            
+        (2)What will be the enrollment prize?<br>
+      Ans.:The prize will be mention on rules page. </p>
+          </div>
+          
+
+
+
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+       <a href="Events.html">
+    <div id="icon" class="Icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </a>
+    </div>
+   
+
+
+
+
+
+    <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+        var icon = document.getElementById("icon");
+
+icon.onclick = function() {
+  if (this.className === "Icon") {
+    this.className = "Icon open"; 
+  } else {
+    this.className = "Icon";
+  }
+};
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+</body>
+</html>

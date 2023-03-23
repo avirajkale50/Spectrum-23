@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding War</title>
+    <link rel="stylesheet" href="CodingWar.css">
+    <link rel="icon" href="image\SpectrumLogo1.png"/>
+    <!-- <script defer src="activePage.js"></script> -->
+</head>
+<body>
+
+    <div class="container">
+
+      
+
+        <div class="card">
+
+          <div>
+        <img src="image/poster coding war.png"  alt="event1">
+      </div>
+
+
+
+       <div class="cardtext">
+        <h2>Coding War</h2>
+    
+          <nav>
+            <ul>
+                <li><button class="tablink" onclick="openPage('Event', this, '#FF9021')" >Event</button></li>
+                <li><button class="tablink" onclick="openPage('Rules', this, '#FF9021')" >Rules</button></li>
+                <li><button class="tablink" onclick="openPage('Register', this, '#FF9021')"  id="defaultOpen">Register</button></li>
+                <li><button class="tablink" onclick="openPage('Event Format', this, '#FF9021')">Format</button></li>
+                <li><button class="tablink" onclick="openPage('FAQ`s', this, '#FF9021')">FAQ`s</button></li>
+            </ul>
+          </nav>
+           <div id="Event" class="tabcontent">
+            <h3>Event</h3><br />
+           <center> <p>The major objectiveof this event is to provide a plateform exclusively to First Year Engineering students to express and apply their innovative ideas and hidden talents in the competitive technological scenario.</p><br/>
+               <p>This two-round competition is open to all FY students from various colleges and branches. The competition features online and offline rounds with challenging problems. Don't miss your chance to participate and showcase your coding skills!</p><br/>
+               </center>
+          </div>
+          
+          <div id="Rules" class="tabcontent">
+              <h3>Rules</h3><br />
+              <center><p>Maximum two students per team</p> <br />
+              <p><b>Round 1 :-</b> Online MCQ test in C language- F.E. level<br />
+              (Any one candidate from a team will participate in 1st round)</p><br />
+              <p><b>Round 2 :-</b> Programming and Implementation using C language</p><br />
+              </center>
+          </div>
+          
+          <div id="Register" class="tabcontent">
+            <h3>Register</h3>
+              <br /><br/>
+              <button href="#google form link is need to paste here "> Register </button>
+          
+            <center>
+                <br /><p><b>Event In-charge :</b> Mrs. Shraddha Ovale</p><br/>
+                <p><b>Team :</b> CPPS+PPS all team</p><br/>
+            </center>
+            </div>
+          
+          <div id="Event Format" class="tabcontent">
+            <h3>Event Format</h3><br />
+            <center><p>Evaluation parameters will be decided by the judging authorities</p><br/>
+              <p>The decisions of the judges will be final</p><br/>
+              </center>
+          </div>
+
+          <div id="FAQ`s" class="tabcontent">
+            <h3>FAQ's</h3>
+            <p></p>
+          </div>
+         
+
+        </div>
+   
+    </div>
+
+       <a href="Events.html">
+       <div id="icon" class="Icon">
+       <span></span>
+       <span></span>
+       <span></span>
+       </div>
+       </a>
+      </div>
+   
+
+ <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+        var icon = document.getElementById("icon");
+
+icon.onclick = function() {
+  if (this.className === "Icon") {
+    this.className = "Icon open"; 
+  } else {
+    this.className = "Icon";
+  }
+};
+ </script>
+
+
+</body>
+</html>
